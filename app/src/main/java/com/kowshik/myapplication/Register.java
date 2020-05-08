@@ -29,7 +29,7 @@ import java.util.Map;
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mFullName,mPhone,mEmail,mPassword;
-    Button mregisterbtn;
+    Button mregisterbtn;//button
     TextView mLogInbtn;
     FirebaseAuth fAuth;//p
     ProgressBar progessBar;
