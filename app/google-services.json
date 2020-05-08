@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "582502630126",
+    "firebase_url": "https://stultus-4640b.firebaseio.com",
+    "project_id": "stultus-4640b",
+    "storage_bucket": "stultus-4640b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582502630126:android:45f71b8c632e577d1d29ff",
+        "android_client_info": {
+          "package_name": "com.kowshik.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582502630126-qm5v8414ab0h8gtcd5l00n43va8p486a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx0oWymK2HuhoDCmJoBb0QjlHX88rJnrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582502630126-qm5v8414ab0h8gtcd5l00n43va8p486a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
