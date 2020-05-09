@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/askq"
+                android:icon="@drawable/question"
+                android:title="Ask questions" />
+            <item
+                android:id="@+id/ansq"
+                android:icon="@drawable/answer"
+                android:title="Answer questions" />
+        </menu>
+    </item>
+    <item android:title="Support">
+        <menu >
+            <item
+                android:id="@+id/rating"
+                android:icon="@drawable/rate"
+                android:title="Rating" />
+            <item
+                android:id="@+id/donate"
+                android:icon="@drawable/donate"
+                android:title="Donate" />
+        </menu>
+    </item>
+
+    <item android:title="Logout">
+        <menu >
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:onClick="logout"
+                android:title="logout" />
+        </menu>
+    </item>
+
+
+</menu>

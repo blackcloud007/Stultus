@@ -42,7 +42,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         mEmail=findViewById(R.id.emailid);
-        mFullName=findViewById(R.id.fullname);
+        mFullName=findViewById(R.id.userdisplayname);
         mLogInbtn=findViewById(R.id.loginText);
         mregisterbtn=findViewById(R.id.registerbtn);
         mPhone=findViewById(R.id.ph);
