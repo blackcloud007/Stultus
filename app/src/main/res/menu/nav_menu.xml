@@ -30,7 +30,7 @@
             <item
                 android:id="@+id/logout"
                 android:icon="@drawable/logout"
-                android:onClick="logout"
+
                 android:title="logout" />
         </menu>
     </item>
