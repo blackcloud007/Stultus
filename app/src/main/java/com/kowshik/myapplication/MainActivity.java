@@ -5,6 +5,9 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,11 +19,17 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.kowshik.myapplication.model.Adapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView nav_view;
+    RecyclerView noteLists;
+    Adapter adapter;
 
 
     @Override
@@ -31,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        noteLists=findViewById(R.id.notelist);
         drawerLayout=findViewById(R.id.drawer);
         nav_view=findViewById(R.id.nav_view);
         nav_view.setNavigationItemSelectedListener(this);
@@ -40,6 +49,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
+
+        List<String> titles= new ArrayList<>();
+        List <String> content= new ArrayList<>();
+
+        titles.add("First title");
+        content.add("first content");
+        titles.add("2 title");
+        content.add("2 content");
+        titles.add("3 title");
+        content.add("3 content");
+
+        adapter=new Adapter(titles,content);
+        noteLists.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
+        noteLists.setAdapter(adapter);
+
     }
 
     /*public void logout(View view) {
